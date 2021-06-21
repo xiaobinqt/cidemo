@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="common/header::header(title='XiiCloud CI测试')"></head>
+<body>
+
+<div th:text="'Welcome ' + ${name} + ', are you a ' + ${sex} + '?'"></div>
+
+<th:block th:include="common/footer::footer"></th:block>
+
+</body>
+</html>
